@@ -119,26 +119,4 @@ failure. If the GitHub-CI checks failed, the PR should be fixed right
 away. No need for a discussion about it, unless you believe the QA
 failure is incorrect.
 
-__Q: The compiler/code analyser/tool is wrong, what now?__
-
-A: To assist in the automation of the QA, we're not accepting warnings
-or errors to stay. In some cases this could mean that we add a
-suppression if the tool supports that (e.g. valgrind, DrMemory). Some
-warnings can be disabled. In some exceptional cases the only
-'solution' is to refactor the code to work around a static code
-checker limitation false positive. While frustrating, we prefer this
-over leaving warnings in the output. Warnings tend to get ignored and
-then increase risk of hiding other warnings.
-
-__Q: I think your QA test is wrong__
-
-A: If you really think it is, we can discuss how to improve it. But
-don't come to this conclusion too quickly, more often it's the code
-that turns out to be wrong.
-
-__Q: Do you require signing of a contributor license agreement?__
-
-A: Yes, we do this to keep the ownership of Suricata in one hand: the
-Open Information Security Foundation. See
-http://suricata.io/about/open-source/ and
-http://suricata.io/about/contribution-agreement/
+ 
